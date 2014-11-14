@@ -280,15 +280,9 @@ window.CircuitCreator  = ( function()
 		_aProcessedRoad = [];
 		_aProcessedRoad[0] = [];
 
-		this.changeDirection = _changeDirection;
 		this.output = _output;
 
-		this.Right = _Right;
-		this.Left = _Left;
-		this.Up = _Up;
-		this.Down = _Down;
-
-		_oCurrentDirection = new this.Right(this);
+		_oCurrentDirection = new _Right();
 		_oCurrentDirection.go( _nCodePos );
 	};
 
