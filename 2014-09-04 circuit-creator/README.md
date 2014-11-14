@@ -57,21 +57,21 @@ And the string `------\-/-/-\-----#-------\--/----------------\--\----\---/---` 
          \----------------/
 
 1. Create a simple Circuit Drawer that given the string return the "real-life" representation. (baby steps)  
-    1.Start with the circuit #--  
-    2.Continue with `#--\`  
-    3.Follow with `#--\\`  
-    4.Next draw `#--//`  
-    5.Try this `#--//---\\-`  
-    6.Finish with `------\-/-/-\-----#-------\--/----------------\--\----\---/---`  
+    1. Start with the circuit #--  
+    2. Continue with `#--\`  
+    3. Follow with `#--\\`  
+    4. Next draw `#--//`  
+    5. Try this `#--//---\\-`  
+    6. Finish with `------\-/-/-\-----#-------\--/----------------\--\----\---/---`  
 2. Allow the app to change the symbols from the input  
-    1.The new symbols must be specified by a map in the form => , "-" => "P"  
+    1. The new symbols must be specified by a map in the form => , "-" => "P"  
 3. Also allow to change the symbols for the output.  
 4. Allow the app to dismiss invalid characters in the input (just skip them)  
-    1.The circuit #--\\---\\ is the same as #-((-\\-¬¬--\\  
+    1. The circuit #--\\---\\ is the same as #-((-\\-¬¬--\\  
 5. Add a method that tell you if the circuit is closed.  
 6. If the circuit is not closed, the last character must be replaced by "#"  
 7. Allow the circuit to cross itself  
-    1.Only allow to cross one time a horizontal with a vertical path  
+    1. Only allow to cross one time a horizontal with a vertical path  
     2. The output character for the cross point is "+"  
     3. For example, the string `#-\-\------/-/---/---/-------\---\--` 
 
