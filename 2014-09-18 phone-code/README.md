@@ -2,7 +2,7 @@
 
 Do you remember the old mobiles keyboards? They look like this:
 
-![old mobiles keyboards](/img/old-mobile-keyboard.png)
+![old mobiles keyboards](https://raw.githubusercontent.com/juanmaguitar/katas-javascript/master/2014-09-18%20phone-code/img/old-mobile-keyboard.png)
 
 We will receive a sequence of pressed numbers and we will have to translate them into a sequence.
 
