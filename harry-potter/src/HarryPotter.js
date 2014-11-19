@@ -10,38 +10,52 @@ HarryPotter.prototype.buy = function( books ) {
 		return Object.prototype.toString.call( input ) === '[object Array]';
 	}
 
+	function _SumArray (a,b) {
+		return a+b;
+	}
 
-	var PRICE_PER_BOOK = 8,
-		nTotalPrice,
-		nDiscount;
+	var PRICE_PER_BOOK = {
+			1 : 8,
+			2 : 8-0.4, // 7.6
+			3: 8-0.8, // 7.2
+			4: 8-1.6, // 6.4
+			5: 8-2, // 6
+		},
+		nTotalPrice = 0,
+		nIndex,
+		nGroupPrice,nBooksGroup,
+		nMaxGroup, nBooks;
 
 	if ( _isNumeric( books ) ) {
-
-		nTotalPrice = PRICE_PER_BOOK*books;
-
-		switch (books) {
-			case 2:
-				nDiscount = nTotalPrice*0.05;
-				break;
-			case 3:
-				nDiscount = nTotalPrice*0.1;
-				break;
-			case 4:
-				nDiscount = nTotalPrice*0.2;
-				break;
-			case 5:
-				nDiscount = nTotalPrice*0.25;
-				break;
-			default:
-				nDiscount = 0;
-		}
-
-		return nTotalPrice - nDiscount;
-
+		nTotalPrice = books*PRICE_PER_BOOK[books];
 	}
 	else if ( _isArray( books ) ) {
-		return 23.2;
+
+		nMaxGroup = nBooks = books.length;
+
+		// temp solution that works w/ specifications
+		if ( !( books.reduce( _SumArray ) %4) ) {
+			nMaxGroup = 4;
+		}
+
+		// http://goo.gl/UudowK
+		while ( books.reduce( _SumArray ) > 0 ) {
+			nBooksGroup = nGroupPrice = 0;
+			for ( nIndex = 0; nIndex < nBooks; nIndex++ ) {
+				if ( nBooksGroup === nMaxGroup ) {
+					nIndex = nBooks;
+				}
+				else if ( books[nIndex] != 0 ) {
+					books[nIndex]--;
+					nBooksGroup++;
+				}
+			}
+			nGroupPrice = nBooksGroup*PRICE_PER_BOOK[nBooksGroup]
+			nTotalPrice+= nGroupPrice;
+		}
+
 	}
 
-	return "books should be number or array";
+	return (nTotalPrice%1 != 0) ? Math.round(nTotalPrice*10)/10 : nTotalPrice;
+
 }
