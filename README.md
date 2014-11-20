@@ -3,7 +3,7 @@ Javascript Katas
 
 This repository contains my solutions on some katas i've been doing recently:
 
-- Circuit Creator [ [Spec](https://github.com/juanmaguitar/katas-javascript/blob/master/circuit-creator/spec/CircuitCreatorSpec.js) | [Src](https://github.com/juanmaguitar/katas-javascript/blob/master/circuit-creator/src/CircuitCreator.js) ]
+- Circuit Creator [ [Spec](https://github.com/juanmaguitar/katas-javascript/blob/master/circuit-creator/spec/CircuitCreatorSpec.js) | [Src](https://github.com/juanmaguitar/katas-javascript/blob/master/circuit-creator/src/CircuitCreator.js) | [Test](http://juanmaguitar.github.io/katas-javascript/circuit-creator/SpecRunner.html) ]
 
 Also, i've done some more katas at [codewars](http://www.codewars.com/users/juanmaguitar)
 
