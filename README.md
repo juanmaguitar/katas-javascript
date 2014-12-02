@@ -17,3 +17,7 @@ More Kata Resources:
 - [http://cyber-dojo.org/](http://cyber-dojo.org/)
 
 About me: [LinkedIn](http://www.linkedin.com/in/juanmagarrido)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/juanmaguitar/katas-javascript/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
