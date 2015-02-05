@@ -2,7 +2,9 @@ describe("A global function 'mineWeeper' that", function() {
 
 	var sCase1, sExpectedOutput1,
 			sCase2, sExpectedOutput2,
-			sCase3, sExpectedOutput3;
+			sCase3, sExpectedOutput3,
+			sCase4, sExpectedOutput4,
+			sCase5, sExpectedOutput5;
 
 	/* CASE 1 */
 	sCase1 =  "O O O O X O O O O O"+"\n";
