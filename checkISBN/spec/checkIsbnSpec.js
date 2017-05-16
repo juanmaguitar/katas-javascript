@@ -28,7 +28,7 @@ describe('function checkISBN ', function () {
       var result = checkISBN(isbnString)
       expect(result).toBe(false)
     })
-    it('does contain 10 numbers but using accepted separators (ex: "21-2645-6781")', function () {
+    it('does contain 10 numbers but using NOT accepted separators (ex: "21.2645.6781")', function () {
       var isbnString = '21.2645.6781'
       var result = checkISBN(isbnString)
       expect(result).toBe(false)
